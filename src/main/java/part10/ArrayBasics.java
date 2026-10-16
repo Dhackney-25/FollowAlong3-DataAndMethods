@@ -15,17 +15,23 @@ package part10;
 
 public class ArrayBasics {
         public static void main(String[] args) {
+            // Creates a String array that can hold 3 car names
             String[] cars = new String[3];
-
+            // Stores Camaro at index 0
             cars[0] = "Camaro";
+            // Stores Corvette at index 1
             cars[1] = "Corvette";
+            // Stores Tesla at index 2
             cars[2] = "Tesla";
-
+            // Prints the first car, Camaro
             System.out.println(cars[0]);
+            // Prints the second car, Corvette
             System.out.println(cars[1]);
+            // Prints the third car, Tesla
             System.out.println(cars[2]);
-
+            // Loops through each index in the array
             for (int i = 0; i < cars.length; i++) {
+                // Prints the car name at the current index
                 System.out.println(cars[i]);
             }
         }

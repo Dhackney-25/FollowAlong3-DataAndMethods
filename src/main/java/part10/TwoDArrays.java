@@ -15,15 +15,22 @@ package part10;
 
 public class TwoDArrays {
     public static void main(String[] args){
+        // Creates a 2D array to store car names in rows and columns
         String[][] cars = {
+                // First row of cars
                 {"Camaro", "Corvette", "Silverado"},
+                // Second row of cars
                 {"Mustang", "Ranger", "F-150"},
+                // Third row of cars
                 {"Ferrari", "Lambo", "Tesla"}
         };
-
+        // Loops through each row of the array
         for (int i = 0; i < cars.length; i++) {
+            // Moves to a new line before printing each row
             System.out.println();
+            // Loops through each car in the current row
             for (int j = 0; j < cars[i].length; j++) {
+                // Prints the car name followed by a space
                 System.out.print(cars[i][j] + " ");
             }
         }
