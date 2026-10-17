@@ -16,42 +16,56 @@ package part11;
 
 public class StringMethods {
     public static void main(String[] args){
+        // Creates a String variable called name and stores "Bro"
         String name = "Bro";
-
+        // Checks if name is exactly equal to "Bro"
         boolean equalsResult = name.equals("Bro");
+        // Prints true
         System.out.println(equalsResult);
 
-
+        // Checks if name is equal to "bro" (case-sensitive)
         boolean lowerResult = name.equals("bro");
+        // Prints false because B is uppercase
         System.out.println(lowerResult);
-
+        // Checks if name equals "bro", ignoring uppercase and lowercase differences
         boolean ignoreResult = name.equalsIgnoreCase("bro");
+        // Prints true
         System.out.println(ignoreResult);
-
+        // Gets the number of characters in name
         int lengthResult = name.length();
+        // Prints 3
         System.out.println(lengthResult);
-
+        // Gets the character at index 0 (the first character)
         char charResult = name.charAt(0);
+        // Prints B
         System.out.println(charResult);
-
+        // Finds the index of the first occurrence of "o"
         int indexResult = name.indexOf("o");
+        // Prints 1
         System.out.println(indexResult);
-
+        // Checks whether name is empty
         boolean emptyResult = name.isEmpty();
+        // Prints false because "Bro" is not empty
         System.out.println(emptyResult);
-
+        // Converts name to uppercase
         String upperResult = name.toUpperCase();
+        // Prints BRO
         System.out.println(upperResult);
-
+        // Converts name to lowercase
         String lowerCaseResult = name.toLowerCase();
+        // Prints bro
         System.out.println(lowerCaseResult);
-
+        // Creates a String with spaces before and after the word
         String spaced = "   Bro   ";
+        // Removes whitespace from the beginning and end of the String
         String trimResult = spaced.trim();
+        // Prints the original String, including its spaces
         System.out.println("[" + spaced + "]");
+        // Prints the trimmed String without the outside spaces
         System.out.println("[" + trimResult + "]");
-
+        // Replaces every occurrence of 'o' with 'a'
         String replaceResult = name.replace('o', 'a');
+        // Prints Bra
         System.out.println(replaceResult);
 
     }

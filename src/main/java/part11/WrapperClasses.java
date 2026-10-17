@@ -16,16 +16,24 @@ package part11;
 
 public class WrapperClasses {
     public static void main(String[] args){
+        // Creates a Boolean object and stores true
         Boolean a = true;
+        // Creates a Character object and stores the @ symbol
         Character b = '@';
+        // Creates an Integer object and stores 123
         Integer c = 123;
+        // Creates a Double object and stores 3.14
         Double d = 3.14;
+        // Creates a String variable and stores the text "Bro"
         String e = "Bro";
-
+        // Checks if a is true
         if (a == true) {
+            // Prints a message if a is true
             System.out.println("This is true");
         }
+        // Checks if b contains the @ character
         if (b == '@') {
+            // Prints a message if b is @
             System.out.println("This is true");
         }
     }
