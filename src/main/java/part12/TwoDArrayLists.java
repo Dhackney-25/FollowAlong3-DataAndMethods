@@ -17,32 +17,49 @@ import java.util.ArrayList;
 
 public class TwoDArrayLists {
     public static void main(String[] args) {
+        // Creates an ArrayList for bakery items
         ArrayList<String> bakeryList = new ArrayList<String>();
+        // Adds "pasta" to the bakery list
         bakeryList.add("pasta");
+        // Adds "garlic bread" to the bakery
         bakeryList.add("garlic bread");
+        // Adds "donuts" to the bakery list
         bakeryList.add("donuts");
-
+        // Creates an ArrayList for produce items
         ArrayList<String> produceList = new ArrayList<String>();
+        // Adds "tomatoes" to the produce list
         produceList.add("tomatoes");
+        // Adds "zucchini" to the produce list
         produceList.add("zucchini");
+        // Adds "peppers" to the produce list
         produceList.add("peppers");
-
+        // Creates an ArrayList for drinks
         ArrayList<String> drinksList = new ArrayList<String>();
+        // Adds "soda" to the drinks list
         drinksList.add("soda");
+        // Adds "coffee" to the drinks list
         drinksList.add("coffee");
-
+        // Prints the entire bakery list
         System.out.println(bakeryList);
+        // Prints the first item in the bakery list (index 0)
         System.out.println(bakeryList.get(0));
+        // Prints the entire drinks list
         System.out.println(drinksList);
-
+        // Creates a 2D ArrayList to store multiple grocery lists
         ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
+        // Adds the bakery list as the first list
         groceryList.add(bakeryList);
+        // Adds the produce list as the second list
         groceryList.add(produceList);
+        // Adds the drinks list as the third list
         groceryList.add(drinksList);
-
+        // Prints the entire grocery list, including all three lists
         System.out.println(groceryList);
+        // Prints the first list (bakery items)
         System.out.println(groceryList.get(0));
+        // Prints the first item in the first list ("pasta")
         System.out.println(groceryList.get(0).get(0));
+        // Prints the second item in the third list ("coffee")
         System.out.println(groceryList.get(2).get(1));
     }
 }

@@ -17,19 +17,26 @@ import java.util.ArrayList;
 
 public class ForEachLoop {
     public static void main(String[] args) {
+        // Creates an array of Strings containing four animals
         String[] animals = {"cat", "dog", "rat", "bird"};
-
+        // Loops through each animal in the array
         for (String i : animals) {
+            // Prints the current animal
             System.out.println(i);
         }
-
+        // Creates an empty ArrayList that stores Strings
         ArrayList<String> animalList = new ArrayList<String>();
+        // Adds "cat" to the ArrayList
         animalList.add("cat");
+        // Adds "dog" to the ArrayList
         animalList.add("dog");
+        // Adds "rat" to the ArrayList
         animalList.add("rat");
+        // Adds "bird" to the ArrayList
         animalList.add("bird");
-
+        // Loops through each animal in the ArrayList
         for (String i : animalList) {
+            // Print the current animal
             System.out.println(i);
         }
     }
