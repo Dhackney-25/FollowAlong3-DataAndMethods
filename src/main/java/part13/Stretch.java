@@ -11,30 +11,38 @@ package part13;
 
 public class Stretch {
         public static void main(String[] args) {
+            // Creates an integer variable x and sets its value to 5.
             int x = 5;
-
+            // Calls the change method and passes x into it.
             change(x);
+            // Prints the original value of x, which is still 5.
             System.out.println(x);
-
+            // Calls the twice method to multiply x by 2 and prints the result (10).
             System.out.println(twice(x));
+            // Calls twice twice: first 5 * 2 = 10, then 10 * 2 = 20.
             System.out.println(twice(twice(x)));
-
+            // Calls the greet method with "Sam" as the name and 3 as the number of greetings.
             greet("Sam", 3);
         }
-
-        static void change(int x) {
-            x = 100;
+    // Defines a method named change that accepts an integer parameter x and returns nothing.
+    static void change(int x) {
+        // Changes the local copy of x to 100, without changing the original x in main.
+        x = 100;
         }
-
-        static int twice(int n) {
-            return n * 2;
+    // Defines a method named twice that accepts an integer n and returns an integer.
+    static int twice(int n) {
+        // Multiplies n by 2 and returns the result.
+        return n * 2;
         }
-
-        static void greet(String who, int times) {
-            for (int i = 0; i < times; i++) {
-                System.out.print("Hi " + who + "! ");
+    // Defines a method named greet that accepts a name and the number of times to greet.
+    static void greet(String who, int times) {
+        // Starts a loop that repeats as long as i is less than times.
+        for (int i = 0; i < times; i++) {
+            // Prints a greeting using the name, followed by a space.
+            System.out.print("Hi " + who + "! ");
             }
-            System.out.println();
+        // Prints a newline after all the greetings have been displayed.
+        System.out.println();
         }
     }
 
