@@ -10,5 +10,31 @@ package part13;
 // underneath it — is part of the stretch.
 
 public class Stretch {
+        public static void main(String[] args) {
+            int x = 5;
 
-}
+            change(x);
+            System.out.println(x);
+
+            System.out.println(twice(x));
+            System.out.println(twice(twice(x)));
+
+            greet("Sam", 3);
+        }
+
+        static void change(int x) {
+            x = 100;
+        }
+
+        static int twice(int n) {
+            return n * 2;
+        }
+
+        static void greet(String who, int times) {
+            for (int i = 0; i < times; i++) {
+                System.out.print("Hi " + who + "! ");
+            }
+            System.out.println();
+        }
+    }
+
