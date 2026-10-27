@@ -1,5 +1,5 @@
 package part13;
-
+import java.util.ArrayList;
 // Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=8874s
 //        (warm-up first — no video until the follow-along)
 
@@ -14,5 +14,16 @@ package part13;
 // type  import java.util.ArrayList;  under the package line.
 
 public class Warmup {
+    public static void main(String[] args){
+        ArrayList<Integer> scores = new ArrayList<Integer>();
+        scores.add(90);
+        scores.add(75);
+        scores.add(88);
+        int sum = 0;
+        for (int s : scores) {
+            sum = sum + s;
+        }
+        System.out.println("Total: " + sum);
+    }
 
 }
